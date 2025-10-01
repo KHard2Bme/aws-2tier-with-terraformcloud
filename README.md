@@ -68,7 +68,7 @@ Before you begin, make sure you have:
 ### 1️⃣ Clone the Repository  
 
 ```bash
-git clone https://github.com/your-username/aws-2tier-with-terraformcloud.git
+git clone https://github.com/KHard2Bme/aws-2tier-with-terraformcloud.git
 cd aws-2tier-with-terraformcloud
 ```
 
