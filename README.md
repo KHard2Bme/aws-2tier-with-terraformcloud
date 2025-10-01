@@ -36,6 +36,7 @@ aws-2tier-with-terraformcloud/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
+├── user_data.sh
 ├── modules/
 │   ├── vpc/main.tf
             variables.tf
