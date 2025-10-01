@@ -17,13 +17,13 @@ variable "public_subnet_ids" {
 variable "ami_id" {
   description = "AMI for EC2 instances"
   type        = string
-  default     = "ami-0c94855ba95c71c99" 
+  default     = "ami-00ca32bbc84273381"  #  Amazon Linux 2023 AMI ID
 }
 
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 variable "key_pair_name" {
