@@ -1,7 +1,7 @@
 variable "project_name" {
   description = "Project name prefix for resources"
   type        = string
-  default     = "novatech"
+  default     = "novatechsolutions"
 }
 
 variable "aws_region" {
