@@ -43,7 +43,7 @@ variable "instance_type" {
 variable "key_pair_name" {
   description = "Name of the existing EC2 key pair"
   type        = string
-  default     = "kevinHarding_accesskeys"
+  default     = "terraform-key"
 }
 
 variable "admin_cidr" {
