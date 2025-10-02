@@ -25,6 +25,7 @@ provider "aws" {
 module "vpc" {
   source          = "./modules/vpc"
   name_prefix     = var.project_name
+  project_name    = var.project_name
   region          = var.aws_region
   vpc_cidr        = var.vpc_cidr
   public_subnets  = var.public_subnets

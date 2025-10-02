@@ -27,3 +27,8 @@ variable "private_subnets" {
   type        = list(string)
   default     = ["10.10.3.0/24", "10.10.4.0/24"]
 }
+
+variable "project_name" {
+  description = "The name of the project used for tagging resources"
+  type        = string
+}

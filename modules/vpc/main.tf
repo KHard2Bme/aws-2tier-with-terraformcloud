@@ -69,12 +69,13 @@ resource "aws_route_table" "public" {
   }
 }
 
-locals {
-  public_subnets = [aws_subnet.public_1.id, aws_subnet.public_2.id]
-}
-
-resource "aws_route_table_association" "public_assoc" {
-  for_each = toset(local.public_subnets)
-  subnet_id      = each.value
+resource "aws_route_table_association" "public_assoc_1" {
+  subnet_id      = aws_subnet.public_1.id
   route_table_id = aws_route_table.public.id
 }
+
+resource "aws_route_table_association" "public_assoc_2" {
+  subnet_id      = aws_subnet.public_2.id
+  route_table_id = aws_route_table.public.id
+}
+
