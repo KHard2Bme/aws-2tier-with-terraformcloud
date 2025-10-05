@@ -69,8 +69,7 @@ variable "db_password" {
   description = "Database password (sensitive)"
   type        = string
   sensitive   = true
-  default     = "StrongPassword123!" # Replace in Terraform Cloud for security
-}
+ }
 
 variable "allocated_storage" {
   description = "RDS storage size in GB"

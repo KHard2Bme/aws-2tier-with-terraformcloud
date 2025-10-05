@@ -44,7 +44,6 @@ module "ec2" {
   instance_type     = var.instance_type
   key_pair_name     = var.key_pair_name
   admin_cidr        = var.admin_cidr
-  user_data         = file("${path.module}/user_data.sh")
 }
 
 
