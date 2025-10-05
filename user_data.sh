@@ -1,4 +1,3 @@
-user_data = <<-EOF
 #!/bin/bash
 # Update and install NGINX
 apt update -y
@@ -120,4 +119,4 @@ EOT
 
 # Restart NGINX to load the new page
 systemctl restart nginx
-EOF
+
