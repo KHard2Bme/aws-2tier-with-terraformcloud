@@ -36,7 +36,6 @@ aws-2tier-with-terraformcloud/
 ├── main.tf
 ├── variables.tf
 ├── outputs.tf
-├── user_data.sh
 ├── modules/
 │   ├── vpc/main.tf
             variables.tf
@@ -78,7 +77,8 @@ cd aws-2tier-with-terraformcloud
 In your Terraform Cloud workspace, set the following **environment variables**:  
 - `AWS_ACCESS_KEY_ID`  
 - `AWS_SECRET_ACCESS_KEY`  
-- `AWS_DEFAULT_REGION`  
+- `AWS_DEFAULT_REGION`
+- `db_password` -----> this should be setup in category terraform
 
 ⚠️ Make sure these are marked as **sensitive**.
 
